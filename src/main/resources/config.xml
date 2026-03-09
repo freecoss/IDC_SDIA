@@ -5,6 +5,7 @@
     <bean id="d" class="net.enset.dao.DaoImpl"></bean>
     <bean id="metier" class="net.enset.metier.MetierImpl">
         <property name="dao" ref="d"></property>
+<!--        <constructor-arg ref="d"></constructor-arg> // utilisant le constructeur(avec le setter)-->
 <!-- L'attribut name="dao" correspond à la propriété dao et permet à Spring d'appeler la méthode setDao() pour injecter le bean d -->
     </bean>
 </beans>
